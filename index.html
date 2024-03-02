@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Functiones</title>
+   <style>
+      body {
+         font-family: sans-serif;
+         color: white;
+         background-color: #2e2e2e;
+         max-width: 24rem;
+         align-items: center;
+         margin-inline: auto;
+      }
+   </style>
+</head>
+<body>
+   <h1>Funciones</h1>
+
+   <h2>Iteraciones</h2>
+   <form id="formIteraciones">
+      <label for="numIteraciones">Número de iteraciones</label>
+      <input id="numIteraciones" name="numIteraciones" type="number" min="0" value="10" step="10">
+      <button type="submit">Dale!!</button>
+   </form>
+   <ul>
+      <li>For: <span id="labelFor"></span> ms</li>
+      <li>While: <span id="labelWhile"></span> ms</li>
+      <li>For..Of: <span id="labelForOf"></span> ms</li>
+      <li>Foreach: <span id="labelForEach"></span> ms</li>
+      <li>Map: <span id="labelMap"></span> ms</li>
+   </ul>
+
+   <h2>NOTAS:</h2>
+   <p>La diferencia entre la función del array "foreach" y "map" es que, map genera un nuevo array a partir de los datos obtenidos en su callback.</p>
+
+   <script src="index.js"></script>
+</body>
+</html>
